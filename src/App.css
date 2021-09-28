@@ -1,38 +1,73 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+.loading{
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
   text-align: center;
+  border-radius: 4px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.card{
+  width:20%;
+  margin: 5px;
+}
+.cat-img{
+  width:200px;
+  height: 200px;
+}
+.pagination{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+  padding-bottom: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+header{
+  background-color: #CCBAB0;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  margin-bottom: 15px;
 }
+.title  {
+  font-family: 'Birthstone', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+header p{
+  font-family: 'Courgette', cursive;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+@media (max-width:1060px){
+  .card{
+    width:32%;
   }
-  to {
-    transform: rotate(360deg);
+  .cards{
+    margin-left: 30px;
   }
+  header{
+    flex-direction: column;
+  }
+  .title  {
+    font-size: 22px;
+  }
+}
+@media (max-width:600px){
+  .card{
+    width:50%;
+  }
+  .cards{
+    margin-left: -60px;
+  }
+ 
 }
